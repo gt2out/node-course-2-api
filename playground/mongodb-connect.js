@@ -38,5 +38,5 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     db.close();
 });
 
-// C:\Program Files\MongoDB\Server\4.2\bin
+// cd C:\Program Files\MongoDB\Server\4.2\bin
 // mongod.exe --dbpath /Users/Gizmo/mongo-data

@@ -1,4 +1,4 @@
-// Lesson 75
+// Lesson 80
 
 const expect = require('expect');
 const request = require('supertest');
@@ -88,7 +88,7 @@ describe('GET /todos/:id', () => {
     
     it('should return 404 if todo not found', (done) => {
         //make sure we get 404 back
-        _id = new ObjectID;
+        _id = new ObjectID();
         request(app)
         .get(`/todos/${_id.toHexString()}`)
         .expect(404)
